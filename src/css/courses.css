@@ -1,0 +1,13 @@
+.view-course-btn:link {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.view-course-btn:hover {
+  font-size: larger;
+}
+
+.card-img-height {
+  height: 225px;
+}

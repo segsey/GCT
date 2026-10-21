@@ -1,0 +1,94 @@
+.text-deep-purple {
+  color: #361f71;
+}
+.bg-deep-purple {
+  background-color: #361f71;
+}
+.text-vibrant-yellow {
+  color: #ffd700;
+}
+.bg-vibrant-yellow {
+  background-color: #ffd700;
+}
+.text-light-blue {
+  color: #49baf2;
+}
+.bg-light-blue {
+  background-color: #49baf2;
+}
+
+@font-face {
+  font-family: "BespokeSerif";
+  src: url("./assets/fonts/BespokeSerif-Variable.ttf") format("ttf");
+  font-weight: 400;
+}
+
+.bespokeSerif {
+  font-family: "BespokeSerif";
+}
+
+/* from google fonts */
+.libertinus-math-regular {
+  font-family: "Libertinus Math", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-glass {
+  /* background: rgba(10, 26, 59, 0.35);
+  backdrop-filter: blur(20px); */
+  /* background: rgba(255, 255, 255, 0.1); */
+  background: #0a1a3b7b;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  transition: all 0.3s ease;
+}
+/* When scrolling */
+.navbar-scrolled {
+  background: #0a1a3b7b;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.navbar {
+  z-index: 1050;
+  background: transparent;
+  margin-bottom: -80px;
+}
+.nav-acct-links {
+  color: white;
+  text-decoration: none;
+}
+.nav-acct-links:active {
+  color: #b0e0e6;
+}
+.hero-bg {
+  background-image: url(./assets/images/wallpaper.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cta-fill {
+  background-color: #49baf2;
+  color: white;
+  text-decoration: none;
+  outline: 1px solid white;
+  transition: all 0.3s ease;
+}
+.cta-fill:active,
+.cta-hollow:active {
+  background-color: #5aa5ca;
+}
+.cta-hollow {
+  color: white;
+  text-decoration: none;
+  outline: 1px solid white;
+  transition: all 0.3s ease;
+}
+.cta-hollow:hover {
+  background-color: #49baf2;
+}
+
+.copyrights-bg {
+  background-color: #0a1a3b;
+}
