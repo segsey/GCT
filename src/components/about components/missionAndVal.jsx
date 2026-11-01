@@ -3,10 +3,10 @@ import graphicImage from "../../assets/images/6495319.jpg";
 function MissionAndVal() {
   return (
     <>
-      <div className="py-5">
-        <div className="container col-11 col-12-sm mx-auto py-5 bg-body-secondary rounded shadow">
-          <div className="d-flex flex-wrap flex-md-nowrap align-items-stretch">
-            <div className="col-md-6">
+      <div className="py-12">
+        <div className="container col-11 col-12-sm mx-auto py-12 bg-1 rounded shadow">
+          <div className="d-flex flex-wrap md:flex-nowrap align-items-stretch">
+            <div className="md:col-6">
               <div className="p-3">
                 {/* missions */}
                 <div>
@@ -17,7 +17,7 @@ function MissionAndVal() {
                       style={{ width: "65px", height: "3px" }}
                     ></span>
                   </div>
-                  <p>
+                  <p className="fs-lg">
                     To empower students with modern technology skills through
                     practical, industry-focused training that prepares them for
                     meaningful careers and lifelong growth in the digital world.
@@ -33,7 +33,7 @@ function MissionAndVal() {
                       style={{ width: "65px", height: "3px" }}
                     ></span>
                   </div>
-                  <p>
+                  <p className="fs-lg">
                     To become the leading technology training institution in
                     Abeokuta and beyond, raising a generation of confident
                     innovators, developers, and problem-solvers who create
@@ -42,7 +42,7 @@ function MissionAndVal() {
                 </div>
               </div>
             </div>
-            <div className="vr mx-3 d-none d-md-block"></div>
+            <div className="vr mx-3 d-none md:d-block"></div>
             <div className="align-self-center text-center">
               <img
                 src={graphicImage}
@@ -51,9 +51,9 @@ function MissionAndVal() {
               />
             </div>
           </div>
-          <div className="text-center mt-4">
+          <div className="text-center mt-9">
             <Link
-              className="px-3 py-2 nav-acct-links rounded-pill bg-vibrant-yellow"
+              className="px-6 py-5 nav-acct-links rounded-pill bg-vibrant-yellow"
               to="/contact"
             >
               Contact Us

@@ -1,10 +1,10 @@
 function WhyChooseCard({ item }) {
   return (
-    <div className="col-12 col-sm-6 col-lg-6">
-      <div className="p-3 bg-white rounded h-100">
+    <div className="col-12 sm:col-6 lg:col-6">
+      <div className="px-6 py-8 bg-white rounded h-100 hover-lift">
         <div>
-          <span className="p-2 bg-body-secondary rounded-circle">
-            <i className={`${item.icon} fs-4 fw-bold`}></i>
+          <span className="px-4 py-2 bg-1 rounded-circle d-inline-flex justify-content-center align-items-center">
+            <i className={`${item.icon} fs-2xl fw-bold`}></i>
           </span>
         </div>
         <div className="fw-bold">

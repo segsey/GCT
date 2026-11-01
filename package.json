@@ -13,13 +13,14 @@
     "@dev.icons/react": "^1.1.0",
     "@lottiefiles/dotlottie-react": "^0.19.16",
     "animate.css": "^4.1.1",
-    "bootstrap": "^5.3.8",
+    "bootstrap": "^6.0.0-alpha.1",
     "bootstrap-icons": "^1.13.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-fast-marquee": "^1.6.5",
     "react-multi-carousel": "^2.8.6",
-    "react-router-dom": "^7.18.3"
+    "react-router-dom": "^7.18.3",
+    "rsuite": "^6.2.5"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",

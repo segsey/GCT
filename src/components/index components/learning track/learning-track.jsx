@@ -14,9 +14,9 @@ function LearningTrack() {
   return (
     <>
       {/* our learning track start */}
-      <div className="container py-5">
+      <div className="container py-12">
         {/* heading */}
-        <div className="text-center my-3">
+        <div className="text-center my-5">
           <div className="h1 libertinus-math-regular fw-bold">
             Our Learning Tracks
           </div>
@@ -25,7 +25,7 @@ function LearningTrack() {
           </i>
         </div>
 
-        <div className="row g-3 justify-content-center align-items-stretch">
+        <div className="row g-7 justify-content-center align-items-stretch">
           <LearningTrackCard
             image={frontendImg}
             title="Frontend Development"

@@ -2,8 +2,8 @@ function AboutHero() {
   return (
     <>
       <div className="hero-bg">
-        <div className="container py-5">
-          <div className="text-center text-white mt-5">
+        <div className="container py-12">
+          <div className="text-center fg-white mt-12">
             <div className="bespokeSerif text-vibrant-yellow">
               // About GCTechies //
             </div>

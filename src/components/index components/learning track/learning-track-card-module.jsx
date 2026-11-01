@@ -2,7 +2,7 @@ import SkillBadge from "./skillBadge";
 
 function LearningTrackCard({ image, title, summary, description, skills }) {
   return (
-    <div className="col-12 col-sm-6 col-md-4 d-flex">
+    <div className="col-12 sm:col-6 md:col-3 d-flex">
       <div className="card">
         <img src={image} className="card-img-top card-img-height" />
         <div className="card-body text-center">
@@ -11,7 +11,7 @@ function LearningTrackCard({ image, title, summary, description, skills }) {
           <p className="card-text">{description}</p>
           <hr />
           <div
-            className="d-flex flex-wrap gap-2 px-2 pb-2"
+            className="d-flex flex-wrap gap-2 px-4 pb-4"
             style={{ fontSize: "small" }}
           >
             {skills.map((skill) => (

@@ -17,8 +17,8 @@ import "../../../css/marquee.css";
 function HeroMarqueeEffect() {
   return (
     <>
-      <div className="marquee my-3">
-        <div className="marquee-track gap-5">
+      <div className="marquee my-7">
+        <div className="marquee-track gap-12">
           <Html5 size={50} />
           <Css size={50} />
           <Javascript size={50} />

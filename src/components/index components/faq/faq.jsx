@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
-import Accordion from "./accordion-module";
+import Accordion from "./accordionModule";
+import AccordionArr from "./accordionArr";
 
 function FAQ() {
   return (
     <>
       {/* change bg later */}
       <div className="faq-bg bg-body-secondary">
-        <div className="container py-5">
+        <div className="container py-12">
           {/* heading */}
           <div className="text-center">
             <h1 className="fw-bold libertinus-math-regular">
@@ -23,45 +24,10 @@ function FAQ() {
           </div>
 
           {/* accordion start */}
-          <div
-            className="accordion col-12 col-sm-9 col-lg-8 mx-auto my-3"
-            id="accordionExample"
-            data-aos="flip-up"
-          >
-            <Accordion
-              heading="Do I need any programming experience?"
-              content="Not at all.
-              Our beginner-friendly courses are designed for students with 
-              little or no prior experience. We guide you step by step from 
-              the fundamentals to building real-world projects."
-              id="collapseOne"
-            />
-            <Accordion
-              heading="What courses do you offer?"
-              content="We offer training in HTML & CSS, JavaScript (ES6), React.js, 
-              Node.js, Java, Bootstrap, and Data Structures & Algorithms, 
-              helping students build strong full-stack development skills."
-              id="collapseTwo"
-            />
-            <Accordion
-              heading="Are the classes online or physical?"
-              content="We offer both physical and online learning options, 
-              allowing students to choose the format that best fits their schedule and location."
-              id="collapseThree"
-            />
-            <Accordion
-              heading="Will I build real projects?"
-              content="Absolutely! Practical learning is at the heart of our 
-              training. You'll work on real-world projects that strengthen your skills 
-              and prepare you for interviews and professional work."
-              id="collapseFour"
-            />
-            <Accordion
-              heading="How do I enroll?"
-              content="Getting started is simple. Contact us through our website or social media, 
-              choose your preferred course, and our team will guide you through the registration process."
-              id="collapseFive"
-            />
+          <div className="accordion theme-primary col-12 sm:col-9 lg:col-8 mx-auto my-6">
+            {AccordionArr.map((item, index) => {
+              return <Accordion key={index} item={item} />;
+            })}
           </div>
           {/* accordion end */}
 
@@ -74,9 +40,9 @@ function FAQ() {
                 to you as soon as possible.
               </span>
             </div>
-            <div className="pt-4" data-aos="fade-up">
+            <div className="pt-6" data-aos="fade-up">
               <Link
-                className="px-4 py-3 fw-bold nav-acct-links rounded-pill bg-vibrant-yellow"
+                className="px-7 py-5 fw-bold nav-acct-links rounded-pill bg-vibrant-yellow"
                 to="/contact"
               >
                 Contact Us

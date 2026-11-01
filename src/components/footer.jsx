@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div style={{ background: "#0b0b1f", fontSize: "smaller" }}>
-      <div className="container py-5 px-3 px-md-0">
-        <div className="row gy-4 text-white">
+    <div style={{ background: "#0b0b1f" }}>
+      <div className="container py-12 px-9 md:px-0">
+        <div className="row gy-4 fg-white">
           {/* Brand */}
-          <div className="col-sm-4 col-lg-4">
+          <div className="sm:col-4 lg:col-4">
             <h4 className="fw-bold">GCTechies</h4>
             <div className="mt-2 mt-md-3">
               Empowering aspiring developers with practical, hands-on training
@@ -16,7 +16,7 @@ function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="col-6 col-sm-2 col-lg-2">
+          <div className="col-6 sm:col-2 lg:col-2">
             <h6 className="text-white mb-2 mb-md-3">Quick Links</h6>
             <ul className="list-unstyled">
               <li>
@@ -43,7 +43,7 @@ function Footer() {
           </div>
 
           {/* Courses */}
-          <div className="col-6 col-sm-3 col-lg-3">
+          <div className="col-6 sm:col-3 lg:col-3">
             <h6 className="text-white mb-2 mb-md-3">Popular Courses</h6>
             <ul className="list-unstyled">
               <li>HTML & CSS</li>
@@ -54,8 +54,8 @@ function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="col-sm-3 col-lg-3">
-            <h6 className="text-white mb-2 mb-md-3">Get In Touch</h6>
+          <div className="sm:col-3 lg:col-3">
+            <h6 className="fg-white mb-2 mb-md-3">Get In Touch</h6>
             <p className="mb-2">
               <i className="bi bi-envelope-fill me-2"></i>
               info@gctechies.com
@@ -64,28 +64,28 @@ function Footer() {
               <i className="bi bi-telephone-fill me-2"></i>
               +234 803 426 2759
             </p>
-            <div className="d-flex gap-3 mt-3">
-              <a href="#" className="text-white fs-6">
+            <div className="d-flex gap-5 mt-3">
+              <a href="#" className="text-white fs-lg">
                 <i className="bi bi-whatsapp"></i>
               </a>
-              <a href="#" className="text-white fs-6">
+              <a href="#" className="text-white fs-lg">
                 <i className="bi bi-facebook"></i>
               </a>
-              <a href="#" className="text-white fs-6">
+              <a href="#" className="text-white fs-lg">
                 <i className="bi bi-instagram"></i>
               </a>
-              <a href="#" className="text-white fs-6">
+              <a href="#" className="text-white fs-lg">
                 <i className="bi bi-twitter-x"></i>
               </a>
             </div>
           </div>
         </div>
 
-        <hr className="border-white my-3 my-md-4" />
+        <hr className="border-white my-3 md:my-4" />
 
-        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center text-white text-center text-md-start">
+        <div className="d-flex flex-column md:flex-row justify-content-between align-items-center text-white text-center md:text-start">
           <div>© 2026 Genius Computer Technologies. All Rights Reserved.</div>
-          <div className="mt-2 mt-md-0">...we make solutions better</div>
+          <div className="mt-2 md:mt-0">...we make solutions better</div>
         </div>
       </div>
     </div>

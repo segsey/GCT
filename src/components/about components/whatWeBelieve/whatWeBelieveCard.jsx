@@ -1,11 +1,11 @@
 function WhatWeBelieveCard({ item }) {
   return (
     <>
-      <div className="col-md-3 bg-secondary-subtle rounded">
+      <div className="md:col-3 rounded">
         <div className="text-center p-3">
           <div>
             <i
-              className={`bi ${item.icon}  px-2 py-1 rounded-circle bg-white fs-4`}
+              className={`bi ${item.icon} d-inline-flex justify-content-center align-items-center  px-6 py-4 rounded-circle bg-white fs-xl`}
             ></i>
           </div>
           <div className="fw-bold">

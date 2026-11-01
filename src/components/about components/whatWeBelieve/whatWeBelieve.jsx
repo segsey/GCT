@@ -1,29 +1,26 @@
+import { Link } from "react-router-dom";
 import WhatWeBelieveCard from "./whatWeBelieveCard";
 
 let arr = [
   {
-    id: 0,
     icon: "bi-laptop",
     heading: "Practical Learning",
     description:
       "We believe technology is best learned by building real projects, not just reading theory.",
   },
   {
-    id: 1,
     icon: "bi-person-heart",
     heading: "Every Student Matters",
     description:
       "Every learner deserves encouragement, patience, and guidance tailored to their pace.",
   },
   {
-    id: 2,
     icon: "bi-graph-up-arrow",
     heading: "Growth Through Consistency",
     description:
       "Small daily improvements lead to extraordinary results over time.",
   },
   {
-    id: 3,
     icon: "bi-journal-bookmark",
     heading: "Learning Never Stops",
     description:
@@ -34,8 +31,8 @@ let arr = [
 function WhatWeBelieve() {
   return (
     <>
-      <div className="bg-body-secondary">
-        <div className="container py-5">
+      <div className="bg-1">
+        <div className="container py-12">
           <div className="h1 text-center">
             What We Believe
             <span
@@ -44,10 +41,20 @@ function WhatWeBelieve() {
             ></span>
           </div>
 
-          <div className="d-flex flex-wrap flex-md-nowrap justify-content-center align-items-stretch my-4 gap-3">
-            {arr.map((arr) => {
-              return <WhatWeBelieveCard key={arr.id} item={arr} />;
+          <div className="d-flex flex-wrap md:flex-nowrap justify-content-center align-items-stretch my-4 gap-3 md:6">
+            {arr.map((item, index) => {
+              return <WhatWeBelieveCard key={index} item={item} />;
             })}
+          </div>
+
+          <div className="text-center">
+            <Link
+              className="px-6 py-5 nav-acct-links rounded-pill bg-vibrant-yellow"
+              to="/courses"
+            >
+              Explore Our Courses
+              <i className="bi bi-arrow-right"></i>
+            </Link>
           </div>
         </div>
       </div>
